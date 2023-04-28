@@ -1,30 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
-        <meta charset="UTF-8">        
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Pioneer Heat&Air</title>
-        <link rel = "icon" href = "PioneerLogo.jpg" type = "image/x-icon">
-        <link rel="stylesheet" href="pioneer.css">
-        <script src="pioneer.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Pioneer | Southwest CO</title>
     </head>
-
     <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://www.google.com/maps/place/Pioneer+Heating+%26+Air/@38.464078,-107.915006,15z/data=!4m16!1m9!3m8!1s0x873f517d96177a4b:0x726a7cbee381fa10!2sPioneer+Heating+%26+Air!8m2!3d38.464078!4d-107.915006!9m1!1b1!16s%2Fg%2F11qmst2c86!3m5!1s0x873f517d96177a4b:0x726a7cbee381fa10!8m2!3d38.464078!4d-107.915006!16s%2Fg%2F11qmst2c86"
+                  class="nav__logo">
+                    Pioneer <i class='bx bxs-hot'></i><i class='bx bx-wind'></i>
+                </a>
+                
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class='bx bx-home-alt-2' ></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class='bx bx-award'></i>
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-phone-call' ></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="tel:+19709010254" class="button nav__button">
+                    Call Now
+                </a>
+            </nav>
+        </header>
 
-        <div class="topnav">
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
-          </div>
-          
-          <div class="content">
-            <h2>CSS Template</h2>
-            <p>A topnav, content and a footer.</p>
-          </div>
-          
-          <div class="footer">
-            <p>Footer</p>
-          </div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Pioneer Heat and AC
+                        </h1>
+                        <p class="home__description">
+                            Professional consulting in HVAC and custom sheet metal needs. <br>
+                            With over 20 years of experience, we aim to build trust with high quality work and communication.
+                        </p>
 
+                      <!--  <form action="" class="home__contact">
+                            <i class='bx bx-phone-outgoing' ></i>
+                            <input type="search" placeholder="Contact now" class="home__contact-input">
+                            <button class="button">Contact</button>
+                        </form>
+                        -->
+
+                        <div class="home__value">
+                            <div>
+                                <h1 class="home__value-number">
+                                    100 <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Happy <br> Customers
+                                </span>
+                            </div>
+                            <div>
+                                <h1 class="home__value-number">
+                                    20 <span>+</span>
+                                </h1>
+                                <span class="home__value-description">
+                                    Years of <br>Experience
+                                </span>
+                            </div>
+                            <div>
+                                <h1 class="home__value-number">
+                                    Multiple
+                                </h1>
+                                <span class="home__value-number" style="color: red; font-size: 1.5rem;">
+                                    Services
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home__images">
+                        <div class="home__orbe">
+                            <div class="home__img">
+                                <img src="assets/img/headshot.jpeg" alt="Installed heater">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== POPULAR // services ====================-->
+            <section class="popular section" id="services">
+                <div class="container">
+                    <span class="section__subtitle">Services / Experience</span>
+                    <h2 class="section__title">
+                        Wide range of knowledge for all your HVAC needs<span>.</span>
+                    </h2>
+
+                    <div class="popular__container swiper">
+                        <div class="swiper-wrapper">
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/img/waterHeater.JPEG" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Prices vary
+                                    </h2>
+                                    <h3 class="popular__title">
+                                        Water heater post-installation
+                                    </h3>
+                                    <p class="popular__description">
+                                        Call now for inquiries on custom installations
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/img/IMG_8539.JPEG" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Prices vary
+                                    </h2>
+                                    <h3 class="popular__title">
+                                        Custom venting
+                                    </h3>
+                                    <p class="popular__description">
+                                        Call now for inquiries on custom installations
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/img/IMG_8536.JPEG" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Prices vary
+                                    </h2>
+                                    <h3 class="popular__title">
+                                        Custom venting
+                                    </h3>
+                                    <p class="popular__description">
+                                        Call now for inquiries on custom installations
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/img/IMG_8537.JPEG" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Prices vary
+                                    </h2>
+                                    <h3 class="popular__title">
+                                        Custom venting
+                                    </h3>
+                                    <p class="popular__description">
+                                        Call now for inquiries on custom installations
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="popular__card swiper-slide">
+                                <img src="assets/img/IMG_8538.JPEG" alt="" class="popular__img">
+
+                                <div class="popular__data">
+                                    <h2 class="popular__price">
+                                        Prices vary
+                                    </h2>
+                                    <h3 class="popular__title">
+                                        Custom venting
+                                    </h3>
+                                    <p class="popular__description">
+                                        Call now for inquiries on custom installations
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class='bx bx-chevron-right'></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-chevron-left' ></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <div class="contact__container">
+
+                    <div class="contact__content">
+                        <div class="contact__data">
+                            <span class="section__subtitle" style="padding-top: 2rem; padding-left: 1rem;">Contact Us</span>
+                            <h2 class="section__title" style="padding-left: 1rem;">
+                                Easy to contact and connect with a real person asap<span>.</span>
+                            </h2>
+                            <p class="contact__description">
+                                Is there a heating or air conditioning problem you have at home? Or need professional installations
+                                for your new dream home? Any sort of consultation is welcome, simply contact us now!
+                            </p>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class='bx bx-phone-call'></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Call
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            970.901.0254
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="tel:+19709010254" class="button contact__card-button" style="text-align: center;">
+                                    Call now
+                                </a>
+                            </div>
+
+                            <div class="contact__card-box">
+                                <div class="contact__card-info">
+                                    <i class='bx bx-envelope'></i>
+                                    <div>
+                                        <h3 class="contact__card-title">
+                                            Email
+                                        </h3>
+                                        <p class="contact__card-description">
+                                            pioneer.heatandair@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <a href="mailto: pioneer.heatandair@gmail.com" class="button contact__card-button" style="text-align: center;">
+                                    Email now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="contact__images">
+                        <div class="contact__orbe"></div>
+
+                        <div class="contact__img">
+                            <img src="assets/img/iron_man.jpg" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <!--==================== LOGO ====================-->
+            <section class="logos section">
+                <div class="logos__container grid">
+                    <div class="logos__img">
+                        <img src="assets/img/logo.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container">
+                <div>
+                    <a href="#" class="footer__logo">
+                        Pioneer <i class='bx bxs-hot'></i><i class='bx bx-wind'></i>
+                    </a>
+                    <p class="footer__description">
+                        Helping establish happy, comfortable homes since 2020
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            Company
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About us</a>
+                            </li>
+                            <li>
+                                <a href="#services" class="footer__link">Services</a>
+                            </li>
+                            <li>
+                                <a href="pages/locations.html" target="_blank" class="footer__link">Locations</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Support
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#contact" class="footer__link">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/maps/place/Pioneer+Heating+%26+Air/@38.464078,-107.915006,15z/data=!4m16!1m9!3m8!1s0x873f517d96177a4b:0x726a7cbee381fa10!2sPioneer+Heating+%26+Air!8m2!3d38.464078!4d-107.915006!9m1!1b1!16s%2Fg%2F11qmst2c86!3m5!1s0x873f517d96177a4b:0x726a7cbee381fa10!8m2!3d38.464078!4d-107.915006!16s%2Fg%2F11qmst2c86"
+                                   class="footer__link" target="_blank">Leave a review on Google</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div>
+                        <h3 class="footer__title">
+                            Follow us
+                        </h3>
+
+                        <!--target="_blank" when ready for social media --
+                        <ul class="footer__social">
+                            <li>
+                                <a href="#" class="footer__social-link">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__social-link">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="footer__info">
+                <span class="footer__copy">
+                    &#169; Pioneer Heat and AC. All rights reserved. <br> Website created by Jose Cervantes.
+                </span>
+
+                <div class="footer__privacy">
+                    <a href="pages/terms.html" target="_blank">Terms & Conditions</a>
+                    <a href="pages/privacy.html" target="_blank">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-chevrons-up'></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
