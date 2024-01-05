@@ -1,0 +1,27 @@
+/* Styles for the blog post */
+
+body { 
+    margin: 20px;  /* Adds some margin around the content */
+}
+
+/* Styling the title */
+h1 {
+    color: blue;  /* Sets the title color to blue */
+    font-size: 2em;  /* Adjusts the font size of the title */
+    margin-bottom: 20px;  /* Adds some spacing below the title */
+}
+
+/* Styling the subtitle */
+h2 {
+    color: red;  /* Sets the subtitle color to red */
+    font-size: 1.5em;  /* Adjusts the font size of the subtitle */
+    margin-top: 10px;  /* Adds some spacing above the subtitle */
+    margin-bottom: 20px;  /* Adds some spacing below the subtitle */
+}
+
+/* General styles */
+p {
+    font-family: Arial, sans-serif;  /* Sets the default font family */
+    line-height: 1.6;  /* Sets the line height for better readability */
+    margin-bottom: 20px;
+}
