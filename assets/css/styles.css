@@ -48,7 +48,7 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --smaller-font-size: .75rem;
   }
 }
 
@@ -235,18 +235,44 @@ button {
     row-gap: 3.5rem;
 }
 
-.home__title,
-.home__value-number{
-    color: #3c43ff;
+ /* Styling for the container */
+ .home-icon-image-container {
+  display: inline-block; /* Ensure the image and effect stay together */
+  position: relative; /* Required for the pseudo-element effect */
+  border-radius: 70px; /* Optional: Rounds the corners */
+  overflow: hidden; /* Ensures the vignette stays within bounds */
 }
 
-.home__title{
-    font-size: var(--biggest-font-size);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 120%;
-    margin-bottom: 1.25rem;
-    margin-top: 3rem;
-    padding-left: 1rem;
+.home-icon-image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-icon-image {
+  position: relative; /* Position relative to the browser window */
+  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  width: 325px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Vignette effect */
+.home-icon-image-container::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none; /* Allows clicking the image without interference */
+  z-index: 1; /* Ensures the effect is above the image */
+}
+
+.home__value-number{
+    color: #3c43ff;
 }
 
 .home__description{
@@ -310,20 +336,20 @@ button {
 }
 
 .home__orbe{
-    width: 265px;
-    height: 300px;
+    width: 270px;
+    height: 365px;
     background: transparent;
     border-radius: 135px 135px 16px 16px;
 }
 
 .home__img{
     position: absolute;
-    width: 260px;
-    height: 290px;
+    width: 265px;
+    height: 355px;
     overflow: hidden;
     border-radius: 140px 140px 12px 12px;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: center;
     box-shadow: 0 8px 16px hsla(228, 66%, 25%, .25);
 }
 
@@ -447,7 +473,7 @@ button {
 
 /*=============== CONTACT ===============*/
 .contact__container{
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 .contact__images{
@@ -742,7 +768,7 @@ button {
 
   .contact__card{
     grid-template-columns: repeat(1, 180px);
-    justify-content: center;
+    justify-content: space-evenly;
     padding-left: .25rem;
     padding-right: .25rem;
   }
@@ -765,7 +791,7 @@ button {
 
   .contact__card{
     grid-template-columns: repeat(2, 280px);
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .footer__content{
@@ -802,7 +828,7 @@ button {
   }
 
   .contact__card{
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .footer__container{
@@ -814,7 +840,7 @@ button {
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .section{
-    padding: 7.5rem 0 1rem;
+    padding: 4rem 0 1rem;
   }
 
   .section__title{
@@ -899,13 +925,6 @@ button {
   .home__orbe{
     width: 280px;
     height: 340px;
-  }
-
-  .home__img{
-    width: 272px;
-    height: 324px;
-    border-radius: 136px 136px 12px 12px;
-    bottom: -1.5rem;
   }
 
   .logos__img{
