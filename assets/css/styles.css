@@ -107,7 +107,7 @@ button {
 }
 
 .section {
-  padding: 3rem 0 2rem;
+  padding: 1rem 0 1rem;
 }
 
 .section__title {
@@ -242,6 +242,7 @@ button {
   margin: 0 auto;
   display: flex; /* Ensure the image and effect stay together */
   overflow: hidden; /* Ensures the vignette stays within bounds */
+  padding-top: 3rem;
   padding-bottom: 24px;
 }
 
@@ -320,6 +321,7 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .home__orbe{
@@ -364,25 +366,6 @@ button {
   display: none;
 }
 
-
-/*=============== LOGOS ===============*/
-.logos__container{
-  padding-bottom: 8rem;
-  /*grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 1rem;*/
-  justify-items: center;
-}
-
-.logos__img img{
-  height: 250px;
-  opacity: .8;
-  transition: .3s;
-}
-
-.logos__img img:hover{
-  opacity: 1;
-}
-
 /*=============== POPULAR // SERVICES ===============*/
 .popular__container{
   padding: 1rem 0 5rem;
@@ -390,6 +373,8 @@ button {
 
 .popular__card{
   width: 290px;
+  min-height: max-content;
+  max-height: fit-content;
   background-color: var(--container-color);
   padding: .5rem .5rem 1.5rem;
   border-radius: 1rem;
@@ -400,7 +385,7 @@ button {
 .popular__img{
   border-radius: 1rem;
   margin-bottom: 1rem;
-
+  
 }
 
 .popular__data{
@@ -408,20 +393,14 @@ button {
   color: #fff;
 }
 
-.popular__price{
-  font-size: var(--h2-font-size);
-  color: #fff;
-  margin-bottom: .25rem;
-}
-
 .popular__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   margin-bottom: .75rem;
   color: red;
 }
 
 .popular__description{
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   justify-content: center;
 }
 
@@ -461,30 +440,8 @@ button {
 /*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 1.5rem;
-}
-
-.contact__images{
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.contact__orbe{
-  width: 266px;
-  height: 316px;
-  background-color: hsl(228, 24%, 97%);
-  border-radius: 135px 135px 16px 16px;
-}
-
-.contact__img{
-  position: absolute;
-  width: 250px;
-  height: 290px;
-  overflow: hidden;
-  border-radius: 125px 125px 12px 12px;
-  inset: 0;
-  margin: auto;
-  box-shadow: 0 16px 32px hsla(228, 66%, 25%, .25);
+  align-items: flex-start;
+  column-gap: 5rem;
 }
 
 .contact__description{
@@ -700,22 +657,6 @@ button {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 350px) {
-  .container{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .section{
-    padding: 3.5rem 0 1rem;
-  }
-
-  .home{
-    padding-bottom: 0;
-  }
-}
-
 @media  screen and (max-width: 320px) {
   .nav__menu{
     padding: 1.3rem 1.5rem;
@@ -737,21 +678,6 @@ button {
 
   .logos__container{
     gap: 2rem 1rem;
-  }
-
-  .popular__card{
-    width: 230px;
-
-  }
-
-  .contact__img{
-    width: 220px;
-    height: 260px;
-  }
-
-  .contact__orbe{
-    width: 236px;
-    height: 280px;
   }
 
   .contact__card{
@@ -788,9 +714,18 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .home-icon-image-container {
+    padding-top: 2rem;
+  }
+
   .contact__card{
     justify-content: space-evenly;
     grid-template-columns: repeat(1, 280px);
+  }
+
+  .popular__card {
+    min-height: max-content;
+    max-height: fit-content;
   }
 
   .footer__container{
@@ -801,10 +736,6 @@ button {
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
-  .section{
-    padding: 4rem 0 1rem;
-  }
-
   .section__title{
     font-size: 2.25rem;
   }
@@ -903,28 +834,6 @@ button {
 
   .popular__data{
     padding: 0 .25rem 0 .75rem;
-  }
-
-  .contact__container{
-    align-items: flex-start;
-    column-gap: 5rem;
-  }
-
-  .contact__orbe{
-    width: 231px;
-    height: 341px;
-    border-radius: 158px 158px 16px 16px;
-  }
-
-  .contact__img{
-    width: 251px;
-    height: 301px;
-    border-radius: 138px 138px 12px 12px;
-  }
-
-  .contact__img img{
-    max-width: initial;
-    width: 260px;
   }
 
   .home__contact-description{
