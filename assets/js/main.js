@@ -52,16 +52,16 @@ window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '60px',
-    duration: 1000,
-    delay: 100,
-    reset: true
+    distance: '40px',
+    duration: 400,
+    viewFactor: 0,
+    delay: 75,
+    reset: false
 })
 
-sr.reveal('.home__title, .popular__container, .footer__container')
-sr.reveal('.home__description, .footer__info, .section__subtitle, .section__title', {delay: 100})
-sr.reveal('.home__value', {delay: 200})
-sr.reveal('.home__images', {delay: 300, origin: 'bottom'})
+sr.reveal('.home__title', '.home__value', '.popular__container, .footer__container')
+sr.reveal('.home__description, .footer__info, .section__subtitle, .section__title')
+sr.reveal('.home__images', {origin: 'bottom'})
 sr.reveal('.logos__img', {interval: 100})
 sr.reveal('.contact__content', {origin: 'left'})
 sr.reveal('.contact__images', {origin: 'right'})
