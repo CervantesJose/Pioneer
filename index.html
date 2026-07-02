@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- LocalBusiness Schema (JSON-LD) -->
-        <script type="application/JSON-LD">
+        <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
@@ -69,20 +69,14 @@
                 "closes": "14:00"
             }
             ],
-            {
-            "@type": "Service",
-            "serviceType": "HVAC",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Pioneer Heat & AC"
-            }
-            },
             "geo": {
             "@type": "GeoCoordinates",
             "latitude": 38.4783,
             "longitude": -107.8762
             },
-            "sameAs": []
+            "sameAs": [
+            "https://www.google.com/maps/place/Pioneer+Heating+%26+Air/@38.464078,-107.915006,15z"
+            ]
         }
         </script>
 
@@ -98,10 +92,27 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Pioneer | Montrose CO</title>
-        <meta name="description" 
+        <title>Pioneer Heat &amp; AC | HVAC, Heating &amp; Air Conditioning in Montrose, CO</title>
+        <meta name="description"
         content="Pioneer Heat & AC provides expert heating and air conditioning services in Montrose, CO—installation, furnace repair, maintenance & indoor air quality solutions backed by 20+ years of local experience."
         />
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Pioneer Heat & AC">
+        <meta name="theme-color" content="#00095c">
+        <link rel="canonical" href="https://pioneerheatandac.com/">
+
+        <!--=============== OPEN GRAPH / SOCIAL ===============-->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Pioneer Heat & AC">
+        <meta property="og:title" content="Pioneer Heat & AC | HVAC in Montrose, CO">
+        <meta property="og:description" content="Expert heating & air conditioning services in Montrose and Southwest Colorado—installation, furnace repair, maintenance & indoor air quality. 20+ years of local experience.">
+        <meta property="og:url" content="https://pioneerheatandac.com/">
+        <meta property="og:image" content="https://pioneerheatandac.com/assets/img/logo.png">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Pioneer Heat & AC | HVAC in Montrose, CO">
+        <meta name="twitter:description" content="Expert heating & air conditioning services in Montrose and Southwest Colorado. 20+ years of local experience.">
+        <meta name="twitter:image" content="https://pioneerheatandac.com/assets/img/logo.png">
 
     </head>
     <body>
@@ -156,38 +167,39 @@
                     <div class="home__data">
 
                         <div class="home-icon-image-container">
-                            <img src="assets/img/logo.png" alt="">
+                            <img src="assets/img/logo.png" alt="Pioneer Heat & AC logo — HVAC company in Montrose, Colorado" width="938" height="563">
                         </div>
 
+                        <h1 class="home__title">
+                            Montrose, Colorado Heating &amp; Air Conditioning Services
+                        </h1>
+
                         <p class="home__description">
-                            <span class="home__value-number" style="color: red; font-size: 1.5rem;">
-                                Montrose, Colorado Heating &amp; Air Conditioning Services <br>
-                            </span>
-                                With 20+ years of experience, Pioneer Heat &amp; AC serves Montrose and Southwest Colorado to deliver reliable HVAC installation, repair, and indoor air quality solutions. From furnace repairs to ductwork optimization, trust our certified technicians for prompt, professional service.
+                            With 20+ years of experience, Pioneer Heat &amp; AC serves Montrose and Southwest Colorado to deliver reliable HVAC installation, repair, and indoor air quality solutions. From furnace repairs to ductwork optimization, trust our certified technicians for prompt, professional service.
                         </p>
 
                         <div class="home__value">
                             <div>
-                                <h1 class="home__value-number">
+                                <p class="home__value-number">
                                     100 <span>+</span>
-                                </h1>
+                                </p>
                                 <span class="home__value-description">
                                     Happy <br> Customers
                                 </span>
                             </div>
                             <div>
-                                <h1 class="home__value-number">
+                                <p class="home__value-number">
                                     20 <span>+</span>
-                                </h1>
+                                </p>
                                 <span class="home__value-description">
                                     Years of <br>Experience
                                 </span>
                             </div>
                             <div>
-                                <h1 class="home__value-number">
+                                <p class="home__value-number">
                                     Multiple
-                                </h1>
-                                <span class="home__value-number" style="color: red; font-size: 1.3rem;">
+                                </p>
+                                <span class="home__value-number home__value-services">
                                     HVAC Services
                                 </span>
                             </div>
@@ -197,7 +209,7 @@
                     <div class="home__images">
                         <div class="home__orbe">
                             <div class="home__img">
-                                <img src="assets/img/award.jpeg" alt="Best of BusinessRate Montrose 2024 Award"/>
+                                <img src="assets/img/award.jpeg" alt="Best of BusinessRate Montrose 2024 Award"/ width="590" height="800">
                             </div>
                         </div>
                     </div>
@@ -265,17 +277,18 @@
                         <div class="swiper-wrapper">
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/erv.jpg" alt="ERV ductless in Montrose, CO" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/erv.jpg" alt="ERV ductless in Montrose, CO" class="popular__img" width="563" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Energy Recovery Ventilator
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         ERV ductless work for small spaces - county codes code-compliant
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Energy Recovery Ventilator",
                                             "provider": {
@@ -288,17 +301,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/split.jpeg" alt="Split system for heating & cooling in Montrose, CO" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/split.jpeg" alt="Split system for heating & cooling in Montrose, CO" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Finished Product Quality
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Split system for heating & cooling
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Finished Product Quality",
                                             "provider": {
@@ -311,17 +325,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/hiddenDuctwork.jpeg" alt="Hidden ductwork for not dropping ceilings in Montrose, CO" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/hiddenDuctwork.jpeg" alt="Hidden ductwork for not dropping ceilings in Montrose, CO" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Custom Ductwork
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Hidden ductwork for not dropping ceilings
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Custom ductwork",
                                             "provider": {
@@ -334,17 +349,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/waterHeater.jpeg" alt="Water Heater Service in Montrose, CO" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/waterHeater.jpeg" alt="Water Heater Service in Montrose, CO" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Furnace installation
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Expert furnace installs tailored for Colorado winters — efficient, reliable, and code-compliant.
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Furnace installation",
                                             "provider": {
@@ -357,17 +373,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/IMG_8539.jpeg" alt="Custom Venting Services Montrose Colorado" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/IMG_8539.jpeg" alt="Custom Venting Services Montrose Colorado" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Custom venting
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Precision ductwork and venting solutions for optimal airflow in Montrose home.
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Custom venting",
                                             "provider": {
@@ -380,17 +397,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/IMG_8536.jpeg" alt="HVAC Consultation Montrose" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/IMG_8536.jpeg" alt="HVAC Consultation Montrose" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         HVAC Services
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Schedule a consultation with our HVAC experts for personalized advice.
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "HVAC Services",
                                             "provider": {
@@ -403,17 +421,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/IMG_8537.jpeg" alt="HVAC Financing Montrose Colorado" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/IMG_8537.jpeg" alt="HVAC Financing Montrose Colorado" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         HVAC Financing Options
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Explore flexible financing options for your HVAC needs.
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "HVAC Financing Options",
                                             "provider": {
@@ -426,17 +445,18 @@
                             </article>
 
                             <article class="popular__card swiper-slide">
-                                <img src="assets/img/IMG_8538.jpeg" alt="Air Quality Services Montrose Colorado" class="popular__img">
+                                <img loading="lazy" decoding="async" src="assets/img/IMG_8538.jpeg" alt="Air Quality Services Montrose Colorado" class="popular__img" width="600" height="800">
 
                                 <div class="popular__data">
-                                    <h2 class="popular__title">
+                                    <h3 class="popular__title">
                                         Furnace / AC Repair
-                                    </h2>
+                                    </h3>
                                     <p class="popular__description">
                                         Maintain optimal air quality with furnace and AC repairs and other services in Montrose Colorado with our heating and cooling solutions.
                                     </p>
                                     <script type="application/ld+json">
                                         {
+                                            "@context": "https://schema.org",
                                             "@type": "Service",
                                             "serviceType": "Air Quality",
                                             "provider": {
@@ -464,8 +484,8 @@
 
                     <div class="contact__content">
                         <div class="contact__data">
-                            <span class="section__subtitle" style="padding-left: 1rem;">Contact Pioneer Heat &amp; AC</span>
-                            <h2 class="section__title" style="padding-left: 1rem;">
+                            <span class="section__subtitle">Contact Pioneer Heat &amp; AC</span>
+                            <h2 class="section__title">
                                 Easy to contact and connect with a real person asap<span>.</span>
                             </h2>
                             <p class="contact__description">
@@ -514,6 +534,7 @@
 
                 </div>
             </section>
+        </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
